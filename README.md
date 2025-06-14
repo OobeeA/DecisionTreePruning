@@ -1,4 +1,4 @@
-Decision Tree Classifier Script
+# Decision Tree with Pruning and Comprehensive Evaluation Suite
 
 ### Introduction
 This script is designed to build, evaluate, and prune decision trees for classification tasks.
@@ -6,40 +6,40 @@ It includes functionality to compute various performance metrics, such as accura
 
 ### Prerequisites and Dependencies
 To run this script, you need to have Python installed on your system along with the following libraries:
-    - NumPy: For numerical computations.
-    - Matplotlib: For plotting decision trees and confusion matrices.
+    - `numpy`: For numerical computations.
+    - `matplotlib`: For plotting decision trees and confusion matrices.
 You can install these dependencies using pip
 
 ### Usage Instructions:
 
 To use the script with your datasets, follow these steps:
-- Prepare your dataset: Ensure your dataset files are formatted correctly, as described in the Dataset Format section. Place them in a directory named wifi_db.
+- Prepare your dataset: Ensure your dataset files are formatted correctly, as described in the Dataset Format section. Place them in a directory named `wifi_db`.
 - Run the script: Execute the script in a Python environment with the required libraries installed. You can use the command:
 
-python source_code.py
+`python source_code.py`
 
 IMPORTANT IF YOU RUN WITH OWN DATASETS 
-- Clean Dataset and Noisy defined at top of the .py file
+- Clean Dataset and Noisy defined at top of the `.py` file
 - Adjust this path for your own datasets if you wish
 
 To evaluate your dataset WITHOUT pruning:
-- run the 'tenfold(dataset)' function with the name of your dataset defined at the top of the file
+- run the `tenfold(dataset)` function with the name of your dataset defined at the top of the file
 - this function returns the average confusion matrix and the average accuracy over 10-fold cross validation
 
 To evaluate your dataset WITH pruning:
-- run the: 'prune(dataset)' function with the name of your dataset defined at the top of the file
+- run the: `prune(dataset)` function with the name of your dataset defined at the top of the file
 - ths function returns the average confusion matrix and the average accuracy over a nested 10-fold cross validation
 
 To visualise your tree WITHOUT pruning:
-- run 'plot_tree(dataset)' function
+- run `plot_tree(dataset)` function
 
 To display your results visually (tables and confusion matrix):
-- if you wish to display ALL PRE-PRUNING RESULTS: metrics, and confusion matrix for a given dataset, run 'display_metrics_for_dataset(dataset)' function
-- if you wish to display ALL POST-PRUNING RESULTS: statistical table, metrics, and confusion matrix for a given dataset, run 'display_results_for_prune_data(dataset)' function
+- if you wish to display ALL PRE-PRUNING RESULTS: metrics, and confusion matrix for a given dataset, run `display_metrics_for_dataset(dataset)` function
+- if you wish to display ALL POST-PRUNING RESULTS: statistical table, metrics, and confusion matrix for a given dataset, run `display_results_for_prune_data(dataset)` function
 - if you wish to display:
-  - only confusion matrix: run 'display_confusion_matrix(confusion_matrix)' if you have the confusion matrix already, or display_dataset_confusion_matrix(dataset)
-  - only metrics table: run 'display_metrics_table' if you have the metrics already (from the tenfold)
-  - only stats table (PRUNING ONLY): run 'display_info_table' with the shown arguments
+  - only confusion matrix: run `display_confusion_matrix(confusion_matrix)` if you have the confusion matrix already, or `display_dataset_confusion_matrix(dataset)`
+  - only metrics table: run `display_metrics_table` if you have the metrics already (from the tenfold)
+  - only stats table (PRUNING ONLY): run `display_info_table` with the shown arguments
 
 Examples are given in comments in the file. Note that displaying all results for BOTH are active when you run. 
 

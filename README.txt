@@ -1,16 +1,16 @@
-README for Decision Tree Classifier Script
+Decision Tree Classifier Script
 
-------Introduction
+### Introduction
 This script is designed to build, evaluate, and prune decision trees for classification tasks.
 It includes functionality to compute various performance metrics, such as accuracy, precision, recall, and F1 score, as well as to visualize decision trees and confusion matrices.
 
-------Prerequisites and Dependencies
+### Prerequisites and Dependencies
 To run this script, you need to have Python installed on your system along with the following libraries:
     - NumPy: For numerical computations.
     - Matplotlib: For plotting decision trees and confusion matrices.
 You can install these dependencies using pip
 
-------Usage Instructions:
+### Usage Instructions:
 
 To use the script with your datasets, follow these steps:
 - Prepare your dataset: Ensure your dataset files are formatted correctly, as described in the Dataset Format section. Place them in a directory named wifi_db.
